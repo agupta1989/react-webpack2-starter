@@ -1,16 +1,16 @@
-import React from 'react';
-// import injectProps from '../decorators';
-import _ from 'lodash';
+import React, { Component } from 'react';
+import Container from './Container';
 
-class App extends React.Component {
-
-  // @injectProps
-  render({title}) {
-    const _title = _.toUpper(title);
+export default class DustbinMultipleTargets extends Component {
+  render() {
     return (
-      <div className={'testAppsss'}>{_title}</div>
+      <div>
+        <p>
+          It demonstrates how a single drop target may accept multiple types, and how those types may be derived from props.
+          It also demonstrates the handling of native files and URLs (try dropping them onto the last two dustbins).
+        </p>
+        <Container />
+      </div>
     );
   }
 }
-
-export default App;

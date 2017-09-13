@@ -40,7 +40,6 @@ const factory = () => {
       _envConfiguration = require('./dev');
   }
 
-  console.log('_envConfiguration', _envConfiguration);
   common.output = _envConfiguration.output;
   return common;
 };

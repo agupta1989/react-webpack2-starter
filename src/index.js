@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app';
+import DustbinMultipleTargets from './app';
 
 const root = document.getElementById('root');
 
-ReactDOM.render(<App title={"Hello World, my name is aman"}/>, root);
+ReactDOM.render(<DustbinMultipleTargets />, root);
